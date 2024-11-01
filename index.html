@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>My Portfolio Website</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<style>
+	body {
+  background: #2980b9;
+}
+#container {
+  position: relative;
+  margin: 0px auto;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+#container {
+  perspective: 1000;
+}
+#card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.3s linear;
+}
+#container:hover #card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  color: #666;
+  background-color: black;
+  text-align: center;
+     width: 400px;
+   height: 400px;
+   -moz-border-radius: 200px; 
+   -webkit-border-radius: 200px; 
+   border-radius: 200px;
+  margin-top:10px;
+}
+h1{
+  padding: 25px 10px 10px 10px;
+  text-align: center;
+}
+.back p {
+  margin:0;
+  padding:0;
+  color: #4287f5;
+}
+	</style>
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/player.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
+            <li><a class="smoothscroll" href="#quotes">Quotes</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+			<div id="container">
+			<div id="card">
+			  <div class="front face">
+			<img alt="" src="img_avatar.png" />
+         </div>
+         <div class="back face center">
+		   <br>
+		   <br>
+		   <br>
+		   <br>
+		   <br>
+           <h1>Logan Lin</h1>
+           <p></p>
+         </div>
+       </div>
+       </div>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="img_avatar"  src="img_avatar.png" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p style="font-size:40px;"><b>Hello there, My name is Logan Lin. Highly skilled, hardworking, ambitious, creative, and results-oriented with innovative knowledge and experience in AI algorithms and models to solve complex problems. I’m a creative and critical thinker whom is passionate and motivated with a drive for success.  I hold the IBM Applied Ai Professional Certificate. I have been doing Front-End and Back-End Web Developer for few years. I'm experienced with using HTML, CSS, and JavaScript to creating, developing and maining the website user interface, as well as, fixing bugs and testing for usability. I'm quite confident in my abilities and working my way up to reach my goals.
+            </b></p>
+			<p>My personality includes as that I like to solve problems and code things from scratch and make interesting web pages with codes I am familiar with. Additional skills includes: Python, PHP, SQL, MySQL, Bootstrap, API, Adobe Photoshop, Visual Studio Code, Wordpress, Git and GitHub, Search Engine Optimization(SEO), and Responsive Design. I have a lot of creative ideas that I am willing and enjoy to bring them to life in the web browser that can be displayed by the codes I use to present. The development software tools I use to make my websites includes Adobe Dreamweaver, Codepen, Github, Notepad++, and Visual Studio Code. In addition to editing pictures and making logos, I use the following: Adobe Photoshop, Paint.net, and Adobe Illustrator.</p>
+
+            <div class="row">
+
+
+               <div class="columns download">
+
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>American InterContinental University</h3>
+                  <p class="info">Bachelor's of Information Technology in Software Analysis & Development</p>
+
+               </div>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+				<div class="bars">
+
+				   <ul class="skills">
+					   <li><span class="bar-expand photoshop">100%</span><em>Photoshop</em></li>
+                       <li><span class="bar-expand illustrator">100%</span><em>Illustrator</em></li>
+					   <li><span class="bar-expand indesign">100%</span><em>InDesign</em></li>
+					   <li><span class="bar-expand dreamweaver">100%</span><em>Dreamweaver</em></li>
+					   <li><span class="bar-expand wordpress">100%</span><em>WordPress</em></li>
+					   <li><span class="bar-expand sqlservermanagementstudio">100%</span><em>SQL Server Management Studio</em></li>
+					   <li><span class="bar-expand css">100%</span><em>CSS</em></li>
+					   <li><span class="bar-expand css3">100%</span><em>CSS3</em></li>
+					   <li><span class="bar-expand sql">100%</span><em>SQL</em></li>
+					   <li><span class="bar-expand python">100%</span><em>Python</em></li>
+					   <li><span class="bar-expand php">100%</span><em>PHP</em></li>
+					   <li><span class="bar-expand html5">100%</span><em>HTML5</em></li>
+					   <li><span class="bar-expand html">100%</span><em>HTML</em></li>
+					   <li><span class="bar-expand javascript">100%</span><em>JavaScript</em></li>
+                       <li><span class="bar-expand jquery">100%</span><em>jQuery</em></li>
+					   <li><span class="bar-expand java">100%</span><em>Java</em></li>
+				   </ul>
+
+				</div><!-- end skill-bars -->
+        
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+    <!-- Project Section
+   ================================================== -->
+       <div class="row project">
+
+         <div class="three columns header-col">
+            <h1><span>Projects</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+				<section>
+                    <div class="projects">
+                       <div><a class="project-tile" href="https://github.com/loganlin233" target="_blank">To see all my projects, click on this link to my Github</a></div>
+                </div>
+                </section>
+
+				</div><!-- end Project-Section -->
+                
+    </section> <!-- Project Section End -->
+
+   </section> <!-- Resume Section End-->
+
+   <!-- Gallery Section
+   ================================================== -->
+   <section id="gallery">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>IMG Gallery</h1>
+
+            <!-- gallery-wrapper -->
+            <div id="gallery-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/gallery/Tron.jpg">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>Tron</h5>
+                              <p>Design/Edit</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/gallery/Darth Vader v Kylo Ren.jpg">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>Darth Vader vs Kylo Ren</h5>
+                              <p>Design/Edit</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/gallery/KC.jpg">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>KC</h5>
+                              <p>Illustrator</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/gallery/TMG.jpg">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>TMG</h5>
+                              <p>Illustrator</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+			   <div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/gallery/Ice Element.png">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>Ice Element</h5>
+                              <p>Photoshop</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+				<div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/gallery/FSD.png">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>Futuristic Dragon Slayer</h5>
+                              <p>Photoshop</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+				<div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/gallery/G.png">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>Gardevoir</h5>
+                              <p>Photoshop</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+				<div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/gallery/LAD.png">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>Light and Darkness</h5>
+                              <p>Photoshop</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+				<div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-09" title="">
+                        <img alt="" src="images/gallery/ME.png">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>Medieval Era</h5>
+                              <p>Photoshop</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+				<div class="columns gallery-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-10" title="">
+                        <img alt="" src="images/gallery/Liquid.png">
+                        <div class="overlay">
+                           <div class="gallery-item-meta">
+          					      <h5>Liquid</h5>
+                              <p>Photoshop</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+				
+
+
+                     </a>
+
+                  </div>
+          		</div>  <!-- item end -->
+
+            </div> <!-- gallery-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Model Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/m-tron.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Tron</h4>
+			      <p>This pic made in Photoshop with 3d-style based off from the movie Tron Legacy. The name of the character is Siren.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photoshop design/edit</span>
+		      </div>
+
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/m-darth vader v kylo ren.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Darth Vader vs Kylo Ren</h4>
+			      <p>This shows of Darth Vader and Kylo Ren from Star Wars fighting that is made up, which is a what if in the Star Wars series.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photoshop design/edit</span>
+		      </div>
+
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/m-KC.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>KC</h4>
+			      <p>Illustrated logo.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Illustrator</span>
+		      </div>
+
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/m-tmg.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>TMG</h4>
+			      <p>Another logo done on Illustrator. This represents for gamer logo.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Illustrator</span>
+		      </div>
+
+
+	      </div><!-- modal-04 End -->
+
+
+		<div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/Ice Element.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Ice Element</h4>
+			      <p>Made in Photoshop. This is from Mortal Kombat game series and the character name is Sub-Zero.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photoshop</span>
+		      </div>
+
+
+	      </div><!-- modal-05 End -->
+		  
+		  
+		  <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/FSD.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Futuristic Dragon Slayer</h4>
+			      <p>Made in Photoshop. This is from the anime series Fairy Tail and the characters shown in hologram is Natsu Dragneel and exceed cat name Happy. </p>
+               <span class="categories"><i class="fa fa-tag"></i>Photoshop</span>
+		      </div>
+
+
+	      </div><!-- modal-06 End -->
+		  	  
+		  
+		  <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/G.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Gardevoir</h4>
+			      <p>Made in Photoshop. This one is from Pokemon name Garedvoir.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photoshop</span>
+		      </div>
+
+
+	      </div><!-- modal-07 End -->
+		  
+		  
+		  <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/LAD.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Light and Darkness</h4>
+			      <p>Made in Photoshop. Another Star Wars fandom that shows half of Darth Vader and half Kylo Ren.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photoshop</span>
+		      </div>
+
+
+	      </div><!-- modal-08 End -->
+		  
+		  
+		  <div id="modal-09" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/ME.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Medieval Era</h4>
+			      <p>Made in Photoshop. This logo resembles of medieval times and medieval games related theme.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photoshop</span>
+		      </div>
+
+
+	      </div><!-- modal-09 End -->
+		  
+		  
+		  <div id="modal-10" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/gallery/modals/Liquid.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Liquid</h4>
+			      <p>Made in Photoshop. Random liquid water display.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photoshop</span>
+		      </div>
+
+
+	      </div><!-- modal-10 End -->
+
+
+
+
+	      </div><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Gallery Section End-->
+
+
+   <!-- Quotes Section
+   ================================================== -->
+   <section id="quotes">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Random Quotes</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Defeat is a state of mind. No one is ever defeated until defeat has been accepted as a reality.
+                           </p>
+                           <cite>Bruce Lee</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Let the past make you better, not bitter.
+                           </p>
+                           <cite>Gautama Buddha</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					
+					 <li>
+                        <blockquote>
+                           <p>Foolishness, Dante, Foolishness. Might controls everything and without strength, you can not protect anything. Let alone yourself.
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+					 <li>
+                        <blockquote>
+                           <p>Those who lack resolve are incapable of even wiping away their own tears.
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+					 <li>
+                        <blockquote>
+                           <p>Even the mightiest warriors experience fears. What makes them a true warrior is the courage that they possess to overcome their fears.
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+					 <li>
+                        <blockquote>
+                           <p>A skyscraper built within your mind will never fall down.
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+					 <li>
+                        <blockquote>
+                           <p>It is not money that rules men. It's fear.
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+					 <li>
+                        <blockquote>
+                           <p>Stop trying to change things that can't be changed. The past is the past and you have to let it go and embrace the future.
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Quotes Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">Have some questions? Contact me by phone or email
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="mailto:l.lin99001@gmail.com" method="post" enctype="text/plain">
+					<fieldset>
+
+                  <div>
+						   Name:<br>
+						   <input type="text" name="name"><br>
+                  </div>
+
+                  <div>
+						   Email:<br>
+						   <input type="text" name="mail"><br>
+                  </div>
+
+                  <div>
+						   Subject:<br>
+						   <input type="text" name="subject"><br>
+                  </div>
+
+                  <div>
+                           Message:<br>
+						   <label for="contactMessage"></label><br>
+						   <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea> 
+                  </div>
+
+                  <div>
+                     <input type="submit" value="Send">
+					 <input type="reset" value="Reset">
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Contact Info</h4>
+					   <p class="address">
+						   Logan Lin<br>	  
+                           <span>info@loganlin-web.com (email)</span> 
+                           <br>
+					   </p>
+
+				   </div>
+
+               <div class="widget widget_tweets">
+
+		         </div>
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+               <li><a href="https://github.com/loganlin233"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+	  
+	  <div class="container">
+	<div class="glow">
+		<div class="text-container">
+			<span class="text">Audio Play</span>
+			<br>
+			<span class="text">Plays Music</span>
+			<br>
+			<div class="playback_controls">
+				<button onclick="skip('back')"><i class="fa fa-fast-backward"></i></button>
+				<button onclick="playpause()"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
+				<button onclick="stop()"><i class="fa fa-stop"></i></button>
+				<button onclick="skip('fwd')"><i class="fa fa-fast-forward"></i></button>
+			</div>
+			<br>
+			<div id="seekbar">
+				<input type="range" oninput="setPos(this.value)" id="seek" value="0" max="">
+			</div>
+			<br>
+			<div class="volume_controls">
+				<button id="mute" onclick="mute()"><i class="fa fa-volume-up"></i></button>
+				<input type="range" id="volume" oninput="setVolume(this.value)" min="0" max="1" step="0.01" value="1">
+			</div>
+			<hr>
+			<p class="pull-center">&copy; Logan Lin
+			</p>
+			<div class="clearfix">&nbsp;</div>
+		</div>
+	</div>
+</div>
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+	
+</body>
+
+</html>
